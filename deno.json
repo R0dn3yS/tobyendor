@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "start": "deno run -A src/main.ts"
+  },
+  "imports": {
+    "@r0dn3ys/mcsr-api": "jsr:@r0dn3ys/mcsr-api@^0.1.8",
+    "@twurple/api": "npm:@twurple/api@^8.2.0",
+    "@twurple/auth": "npm:@twurple/auth@^8.2.0",
+    "@twurple/chat": "npm:@twurple/chat@^8.2.0",
+    "@twurple/easy-bot": "npm:@twurple/easy-bot@^8.2.0",
+    "dotenv": "npm:dotenv@^18.0.8"
+  },
+  "fmt": {
+    "singleQuote": true
+  }
+}
