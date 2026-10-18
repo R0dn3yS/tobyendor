@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN deno cache src/index.ts
+RUN deno cache src/main.ts
 
 RUN deno install
 
