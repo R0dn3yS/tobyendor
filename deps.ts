@@ -1,1 +1,1 @@
-export * from 'https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/main.ts';
+export * from 'https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/main.ts';

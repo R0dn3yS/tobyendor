@@ -4,6 +4,6 @@ export default class WaywallCommand extends Command {
   override name = 'waywall';
   
   override execute(ctx: CommandContext) {
-    ctx.client.say(ctx.channel, 'You can find my waywall config here: https://github.com/R0dn3yS/waywall-config');
+    ctx.channel.say('You can find my waywall config here: https://github.com/R0dn3yS/waywall-config');
   }
 }
