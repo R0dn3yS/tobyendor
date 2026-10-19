@@ -10,6 +10,6 @@ export default class CommandsCommand extends Command {
       commandNames.push(command[1].name);
     }
     
-    ctx.channel.say(`Commands: ${commandNames.sort().map(name => `${ctx.client.prefix}${name}`).join(', ')}`);
+    ctx.reply(`Commands: ${commandNames.sort().map(name => `${ctx.client.prefix}${name}`).join(', ')}`);
   }
 }
