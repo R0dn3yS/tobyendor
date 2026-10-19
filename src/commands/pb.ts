@@ -4,7 +4,7 @@ import { getPB } from '../util/mcsr.ts';
 export default class PbCommand extends Command {
   override name = 'pb';
   
-  override execute(ctx: CommandContext) {
-    ctx.client.say(ctx.channel, `Ranked PB: ${getPB('R0dn3yS')}`);
+  override async execute(ctx: CommandContext) {
+    ctx.client.say(ctx.channel, `Ranked PB: ${await getPB('R0dn3yS')}`);
   }
 }
