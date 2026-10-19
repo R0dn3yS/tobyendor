@@ -9,6 +9,7 @@
     "@twurple/api": "npm:@twurple/api@^8.2.0",
     "@twurple/auth": "npm:@twurple/auth@^8.2.0",
     "@twurple/chat": "npm:@twurple/chat@^8.2.0",
+    "@ys319/fuzzy-search": "jsr:@ys319/fuzzy-search@^0.2.0",
     "discord.js": "npm:discord.js@^14.27.0",
     "dotenv": "npm:dotenv@^18.0.8"
   },

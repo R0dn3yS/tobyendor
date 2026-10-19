@@ -6,6 +6,7 @@
     "jsr:@std/internal@^1.0.14": "1.0.14",
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
+    "jsr:@ys319/fuzzy-search@0.2": "0.2.0",
     "npm:@twurple/api@^8.2.0": "8.2.0_@twurple+auth@8.2.0",
     "npm:@twurple/auth@^8.2.0": "8.2.0",
     "npm:@twurple/chat@^8.2.0": "8.2.0_@twurple+auth@8.2.0",
@@ -31,6 +32,9 @@
       "dependencies": [
         "jsr:@std/internal"
       ]
+    },
+    "@ys319/fuzzy-search@0.2.0": {
+      "integrity": "625f2542ff8806afb68f99a3e9457660a678ec44086fbd28cc026887230c4de6"
     }
   },
   "npm": {
@@ -313,28 +317,19 @@
     }
   },
   "remote": {
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandClient.ts": "3e771d287184822adfff19a17d70686035c60d1d712f37316c0d00005964c518",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/main.ts": "6af0a38bf7568016a76a7730d8ebb19c83db6247d5e87e8c554c0eff8bcc793f",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandClient.ts": "d9065f261dfe11bffffa5377730006ef0885672af0b310d02f96c7788a6bc06b",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandContext.ts": "5874bf011cefb6f337e24cb5cf3b3cea6ad809e175590909a461439ce0ff528b",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/main.ts": "111f2a27ebb6acc53448073df0550fb9bee3727b038ddc3b01d1fe11eced0f9c",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandClient.ts": "d9065f261dfe11bffffa5377730006ef0885672af0b310d02f96c7788a6bc06b",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
-    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/main.ts": "6af0a38bf7568016a76a7730d8ebb19c83db6247d5e87e8c554c0eff8bcc793f"
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/CommandClient.ts": "50e4a890e913b74cc37d3ebbca82bd0be4a07b8974f798b64885d38a7230df5c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/CommandContext.ts": "86502b951e09639492344e6a0328e6c98520c73ddb638eb380855720f3232878",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/c015ce26deecf53b60d9cb1564ab6fdf0795433b/src/main.ts": "6af0a38bf7568016a76a7730d8ebb19c83db6247d5e87e8c554c0eff8bcc793f"
   },
   "workspace": {
     "dependencies": [
       "jsr:@r0dn3ys/mcsr-api@~0.1.8",
       "jsr:@std/fs@^1.0.24",
       "jsr:@std/path@^1.1.6",
+      "jsr:@ys319/fuzzy-search@0.2",
       "npm:@twurple/api@^8.2.0",
       "npm:@twurple/auth@^8.2.0",
       "npm:@twurple/chat@^8.2.0",
