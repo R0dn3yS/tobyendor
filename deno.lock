@@ -2,15 +2,35 @@
   "version": "5",
   "specifiers": {
     "jsr:@r0dn3ys/mcsr-api@~0.1.8": "0.1.8",
+    "jsr:@std/fs@^1.0.24": "1.0.24",
+    "jsr:@std/internal@^1.0.14": "1.0.14",
+    "jsr:@std/path@^1.1.5": "1.1.6",
+    "jsr:@std/path@^1.1.6": "1.1.6",
     "npm:@twurple/api@^8.2.0": "8.2.0_@twurple+auth@8.2.0",
     "npm:@twurple/auth@^8.2.0": "8.2.0",
     "npm:@twurple/chat@^8.2.0": "8.2.0_@twurple+auth@8.2.0",
-    "npm:@twurple/easy-bot@^8.2.0": "8.2.0",
+    "npm:discord.js@^14.27.0": "14.27.0",
     "npm:dotenv@^18.0.8": "18.0.8"
   },
   "jsr": {
     "@r0dn3ys/mcsr-api@0.1.8": {
       "integrity": "15594f562d14dee6fdcc48f333fe926dba07a62a623c3a242da50a7e0bb6a15e"
+    },
+    "@std/fs@1.0.24": {
+      "integrity": "f3061b45b81673a2bece689da041df32d174be064c89eb6397fb5718d3fb7877",
+      "dependencies": [
+        "jsr:@std/internal",
+        "jsr:@std/path@^1.1.5"
+      ]
+    },
+    "@std/internal@1.0.14": {
+      "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
+    },
+    "@std/path@1.1.6": {
+      "integrity": "c68485c2a4dfbb5ae3cc74fae4e8c4e5d874cf8a8ed12927917235c758b46cbe",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
     }
   },
   "npm": {
@@ -43,7 +63,7 @@
     "@d-fischer/escape-string-regexp@5.0.0": {
       "integrity": "sha512-7eoxnxcto5eVPW5h1T+ePnVFukmI9f/ZR9nlBLh1t3kyzJDUNor2C+YW9H/Terw3YnbZSDgDYrpCJCHtOtAQHw=="
     },
-    "@d-fischer/isomorphic-ws@7.0.2_ws@8.21.0": {
+    "@d-fischer/isomorphic-ws@7.0.2_ws@8.22.0": {
       "integrity": "sha512-xK+qIJUF0ne3dsjq5Y3BviQ4M+gx9dzkN+dPP7abBMje4YRfow+X9jBgeEoTe5e+Q6+8hI9R0b37Okkk8Vf0hQ==",
       "dependencies": [
         "ws"
@@ -76,6 +96,77 @@
       "dependencies": [
         "tslib"
       ]
+    },
+    "@discordjs/builders@1.14.1": {
+      "integrity": "sha512-gSKkhXLqs96TCzk66VZuHHl8z2bQMJFGwrXC0f33ngK+FLNau4hU1PYny3DNJfNdSH+gVMzE85/d5FQ2BpcNwQ==",
+      "dependencies": [
+        "@discordjs/formatters",
+        "@discordjs/util",
+        "@sapphire/shapeshift",
+        "discord-api-types",
+        "fast-deep-equal",
+        "ts-mixer",
+        "tslib"
+      ]
+    },
+    "@discordjs/collection@1.5.3": {
+      "integrity": "sha512-SVb428OMd3WO1paV3rm6tSjM4wC+Kecaa1EUGX7vc6/fddvw/6lg90z4QtCqm21zvVe92vMMDt9+DkIvjXImQQ=="
+    },
+    "@discordjs/collection@2.1.1": {
+      "integrity": "sha512-LiSusze9Tc7qF03sLCujF5iZp7K+vRNEDBZ86FT9aQAv3vxMLihUvKvpsCWiQ2DJq1tVckopKm1rxomgNUc9hg=="
+    },
+    "@discordjs/formatters@0.6.2": {
+      "integrity": "sha512-y4UPwWhH6vChKRkGdMB4odasUbHOUwy7KL+OVwF86PvT6QVOwElx+TiI1/6kcmcEe+g5YRXJFiXSXUdabqZOvQ==",
+      "dependencies": [
+        "discord-api-types"
+      ]
+    },
+    "@discordjs/rest@2.6.3": {
+      "integrity": "sha512-wvOylxNYJkwKjctS/Mn5GP1w9r3/rzyH+ThD1JlAca6zEdlHs8QWBBUQJpU5Q+W6DoIj/Ljh1IPlZs7hTU+UAg==",
+      "dependencies": [
+        "@discordjs/collection@2.1.1",
+        "@discordjs/util",
+        "@sapphire/async-queue",
+        "@sapphire/snowflake",
+        "@vladfrangu/async_event_emitter",
+        "discord-api-types",
+        "magic-bytes.js",
+        "tslib",
+        "undici"
+      ]
+    },
+    "@discordjs/util@1.2.0": {
+      "integrity": "sha512-3LKP7F2+atl9vJFhaBjn4nOaSWahZ/yWjOvA4e5pnXkt2qyXRCHLxoBQy81GFtLGCq7K9lPm9R517M1U+/90Qg==",
+      "dependencies": [
+        "discord-api-types"
+      ]
+    },
+    "@discordjs/ws@1.2.3": {
+      "integrity": "sha512-wPlQDxEmlDg5IxhJPuxXr3Vy9AjYq5xCvFWGJyD7w7Np8ZGu+Mc+97LCoEc/+AYCo2IDpKioiH0/c/mj5ZR9Uw==",
+      "dependencies": [
+        "@discordjs/collection@2.1.1",
+        "@discordjs/rest",
+        "@discordjs/util",
+        "@sapphire/async-queue",
+        "@types/ws",
+        "@vladfrangu/async_event_emitter",
+        "discord-api-types",
+        "tslib",
+        "ws"
+      ]
+    },
+    "@sapphire/async-queue@1.5.5": {
+      "integrity": "sha512-cvGzxbba6sav2zZkH8GPf2oGk9yYoD5qrNWdu9fRehifgnFZJMV+nuy2nON2roRO4yQQ+v7MK/Pktl/HgfsUXg=="
+    },
+    "@sapphire/shapeshift@4.0.0": {
+      "integrity": "sha512-d9dUmWVA7MMiKobL3VpLF8P2aeanRTu6ypG2OIaEv/ZHH/SUQ2iHOVyi5wAPjQ+HmnMuL0whK9ez8I/raWbtIg==",
+      "dependencies": [
+        "fast-deep-equal",
+        "lodash"
+      ]
+    },
+    "@sapphire/snowflake@3.5.5": {
+      "integrity": "sha512-xzvBr1Q1c4lCe7i6sRnrofxeO1QTP/LKQ6A6qy0iB4x5yfiSfARMEQEghojzTNALDTcv8En04qYNIco9/K9eZQ=="
     },
     "@twurple/api-call@8.2.0": {
       "integrity": "sha512-N04e4rs2o/XKY3zx+cYk0FTx5spi1DX1cE2xJjuJL2Ti9cdqC1NhJ1f4nSXwSmVtOcAlDkuwIEEmxGr3PTf8Tw==",
@@ -135,34 +226,48 @@
         "tslib"
       ]
     },
-    "@twurple/easy-bot@8.2.0": {
-      "integrity": "sha512-QYeZislXgGWk6f17PWqUS4RV0ttsLGWPidAZs4H76qBPWQwQmFXuDHdT1vi7vzZ51PPZJgvlYXS9srtY38t9eg==",
-      "dependencies": [
-        "@d-fischer/logger",
-        "@d-fischer/shared-utils",
-        "@d-fischer/typed-event-emitter",
-        "@twurple/api",
-        "@twurple/auth",
-        "@twurple/chat",
-        "@twurple/common",
-        "tslib"
-      ]
-    },
     "@types/node@20.19.43": {
       "integrity": "sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==",
       "dependencies": [
         "undici-types"
       ]
     },
-    "@types/ws@8.18.1": {
-      "integrity": "sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==",
+    "@types/ws@8.18.2": {
+      "integrity": "sha512-67MQl+fpWKVTT1NYdnmo3U4sc/xPo/zQBncVnI74qmQa0z/b+1g6iYqNmGCPbxO+zz2aklb08a0oHfegiVd0/w==",
       "dependencies": [
         "@types/node"
+      ]
+    },
+    "@vladfrangu/async_event_emitter@2.4.7": {
+      "integrity": "sha512-Xfe6rpCTxSxfbswi/W/Pz7zp1WWSNn4A0eW4mLkQUewCrXXtMj31lCg+iQyTkh/CkusZSq9eDflu7tjEDXUY6g=="
+    },
+    "discord-api-types@0.38.56": {
+      "integrity": "sha512-Hti4RZsGvF5C7SM8rF2MDHtIm0Hyfrlk84GpEA29nj91tvVVMvX+oQSCodu10t2ZcjFGofq8TX0YyC04B2E69Q=="
+    },
+    "discord.js@14.27.0": {
+      "integrity": "sha512-qHbFlFG2N7y3LjPySYsL6A1+BnX6bkTVgo842EX0CqVPk/KTMwZkojPHEXKsQUpWZNyz5BISNHK1cPpQw0+m4A==",
+      "dependencies": [
+        "@discordjs/builders",
+        "@discordjs/collection@1.5.3",
+        "@discordjs/formatters",
+        "@discordjs/rest",
+        "@discordjs/util",
+        "@discordjs/ws",
+        "@sapphire/snowflake",
+        "discord-api-types",
+        "fast-deep-equal",
+        "lodash.snakecase",
+        "magic-bytes.js",
+        "tslib",
+        "undici"
       ]
     },
     "dotenv@18.0.8": {
       "integrity": "sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==",
       "bin": true
+    },
+    "fast-deep-equal@3.1.3": {
+      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
     },
     "ircv3@0.33.1": {
       "integrity": "sha512-FPUj/q6zsLgIX6QDdLMjPRBObw0xK+k6eiI62dcTRwdl5aezYV0nuMhpmafyHOD6ZDqfw8DW4ayrvDfmYO65JQ==",
@@ -179,8 +284,20 @@
     "klona@2.0.6": {
       "integrity": "sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA=="
     },
+    "lodash.snakecase@4.1.1": {
+      "integrity": "sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw=="
+    },
+    "lodash@4.18.1": {
+      "integrity": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q=="
+    },
+    "magic-bytes.js@1.13.1": {
+      "integrity": "sha512-x5sn4UX2k5gCWlcfmoFwG4TPie8+dctESyqOBdhB5p6MsgWXdBKGmt9nXPObj/JI50TTL928lc5Yt1WntMn1bw=="
+    },
     "retry@0.13.1": {
       "integrity": "sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg=="
+    },
+    "ts-mixer@6.0.4": {
+      "integrity": "sha512-ufKpbmrugz5Aou4wcr5Wc1UUFWOLhq+Fm6qa6P0w0K5Qw2yhaUoiWszhCVuNQyNwrlGiscHOmqYoAox1PtvgjA=="
     },
     "tslib@2.8.1": {
       "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="
@@ -188,17 +305,40 @@
     "undici-types@6.21.0": {
       "integrity": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ=="
     },
-    "ws@8.21.0": {
-      "integrity": "sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g=="
+    "undici@6.29.1": {
+      "integrity": "sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA=="
+    },
+    "ws@8.22.0": {
+      "integrity": "sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg=="
     }
+  },
+  "remote": {
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandClient.ts": "3e771d287184822adfff19a17d70686035c60d1d712f37316c0d00005964c518",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/main.ts": "6af0a38bf7568016a76a7730d8ebb19c83db6247d5e87e8c554c0eff8bcc793f",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandClient.ts": "d9065f261dfe11bffffa5377730006ef0885672af0b310d02f96c7788a6bc06b",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandContext.ts": "5874bf011cefb6f337e24cb5cf3b3cea6ad809e175590909a461439ce0ff528b",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/1ced6492687a266159d0323337a9ae0d7f539af7/src/main.ts": "111f2a27ebb6acc53448073df0550fb9bee3727b038ddc3b01d1fe11eced0f9c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/Command.ts": "120e7e779bae5d95a72506adc21e26c5205e69415adb63da67f0cb6949154029",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandClient.ts": "d9065f261dfe11bffffa5377730006ef0885672af0b310d02f96c7788a6bc06b",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandsLoader.ts": "43544dc596bc2591e798ca5977b8688fc15717bbcee130d6c2a7d876deb59514",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/CommandsManager.ts": "0bebf6864531fcff390642a9e25c2adddefe4c6f1bf41895920c719b413ff46c",
+    "https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/28dab8b57c3c7388501fd252b2f4ece03d612c9a/src/main.ts": "6af0a38bf7568016a76a7730d8ebb19c83db6247d5e87e8c554c0eff8bcc793f"
   },
   "workspace": {
     "dependencies": [
       "jsr:@r0dn3ys/mcsr-api@~0.1.8",
+      "jsr:@std/fs@^1.0.24",
+      "jsr:@std/path@^1.1.6",
       "npm:@twurple/api@^8.2.0",
       "npm:@twurple/auth@^8.2.0",
       "npm:@twurple/chat@^8.2.0",
-      "npm:@twurple/easy-bot@^8.2.0",
+      "npm:discord.js@^14.27.0",
       "npm:dotenv@^18.0.8"
     ]
   }

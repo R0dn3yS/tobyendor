@@ -1,0 +1,1 @@
+export * from 'https://raw.githubusercontent.com/R0dn3yS/twurple-commandclient/132152653c2adf33b655d1059fb052b4a75468fe/src/main.ts';
